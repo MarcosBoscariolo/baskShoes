@@ -1,0 +1,109 @@
+@import '../../../../scss/utilities/color.scss';
+
+.container-main {
+  margin: auto;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  align-items: center; 
+}
+
+.container {
+    margin: auto;
+    max-width: 1220px;
+    // display: grid;
+    align-items: center;
+    // grid-template-columns: 50px 1fr 50px;
+}
+
+.scroll-conatiner {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  // escondendo a barra de rolagem
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  // efeito de rolagem suave
+  scroll-behavior: smooth;
+  // garantindo que funcione em outros navegadores
+  -webkit-scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-prev::before {
+  content: url('../../../../assets/icon/angle-left-solid.svg');
+  width: 13px;
+  position: absolute;
+  top: 2.5px;
+  left: 7.5px;
+}
+
+.button-next::before {
+  content: url('../../../../assets/icon/angle-right-solid.svg');
+  width: 13px;
+  position: absolute;
+  top: 2.5px;
+  right: 7.5px;
+}
+
+.ic {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.angle-icon-left {
+  background: url('../../../../assets/icon/angle-left-solid.svg') no-repeat;
+}
+
+.angle-icon-right {
+  background: url('../../../../assets/icon/angle-right-solid.svg') no-repeat;
+}
+  
+/* button next and prev */
+.swiper-button-prev  {
+  justify-self: end;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: $bg-shoes;
+  border-radius: 50%;
+  display: grid;
+  opacity: 0.6;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.angle-icon-left,
+.angle-icon-right {
+  fill: #1a1a1a;
+  opacity: 0.6;
+  width: 30px;
+  height: 30px;
+}
+
+.angle-icon-left:hover,
+.angle-icon-right:hover {
+  opacity: 0.8;
+}

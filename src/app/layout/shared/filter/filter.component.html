@@ -1,0 +1,16 @@
+<div class="faq">
+    <div class="dl">
+        <div>
+            <div class="dt"><button class="font-1-m-b" aria-controls="faq1" aria-expanded="false" (click)="activeFaq($event)">COR</button></div>
+            <ul class="dd" id="faq1">
+                <li *ngFor="let color of toppingListColor">{{ color }}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="dl">
+        <div>
+            <div class="dt"><button class="font-1-m-b" aria-controls="faq2" aria-expanded="false" (click)="activeFaq($event)">TAMANHO</button></div>
+            <div class="dd" id="faq2">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</div>
+        </div>
+    </div>
+</div>

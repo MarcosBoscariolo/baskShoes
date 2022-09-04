@@ -1,3 +1,5 @@
+@import '../../../../scss/utilities/color.scss';
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -11,13 +13,9 @@
     height: 50vh;
 }
 
-// img {
-//     // max-width: 100%;
-//     object-fit: cover;
-//     object-position: 70% 50%;
-//     width: 100vw;
-//     max-height: 100%;
-// }
+img {
+    filter: brightness(50%);
+}
 
 .main-bg {
     // background: var(--color-12) url("../../../img/dec/bottom-left.svg") no-repeat bottom 160px left 20px;

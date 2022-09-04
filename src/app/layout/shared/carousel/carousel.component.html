@@ -1,0 +1,21 @@
+<div class="container-main">
+  <div class="swiper-button-prev">
+    <button class="button-prev" (click)="scrollBy(false)">
+    </button>
+  </div>
+
+  <div class="container">
+    <div class="scroll-conatiner" [id]="'container'">
+      <div class="scroll-area container-shoes" id="area" *ngFor="let shoes of toppingListShoes">
+        <div class="shoes">
+          <img src="{{ shoes.img }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-button-next">
+    <button class="button-next" (click)="scrollBy(true)">
+    </button>
+  </div>
+</div>

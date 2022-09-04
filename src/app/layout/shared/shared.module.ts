@@ -4,11 +4,17 @@ import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { BannerComponent } from './banner/banner.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ShoesComponent } from './shoes/shoes.component';
+import { FilterComponent } from './filter/filter.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    CarouselComponent,
+    ShoesComponent,
+    FilterComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +22,10 @@ import { BannerComponent } from './banner/banner.component';
   ],
   exports: [
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    CarouselComponent,
+    ShoesComponent,
+    FilterComponent
   ]
 })
 export class SharedModule { }
